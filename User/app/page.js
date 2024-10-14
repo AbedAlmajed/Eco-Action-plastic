@@ -362,7 +362,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Building2, Users, Globe, Target, Leaf, Recycle, TrendingUp, Award } from 'lucide-react';
+import { Building2, Globe, Target, Award } from 'lucide-react';
 
 import HighResEarth from '../components/HighResEarth';
 import HeroSlideshow from '../components/HeroSlideshow';
@@ -372,13 +372,6 @@ import FAQ from '@/components/Fqa';
 import PrizeList from '@/components/PrizeList';
 import AwardedPrizes from '@/components/AwardedPrizes';
 import OurStorySection from '@/components/OurStory';
-
-// Updated image imports
-import logo1 from '../public/textures/schneiderLogo.png';
-import logo2 from '../public/textures/necLogo.png';
-import logo3 from '../public/textures/Logo3.png';
-import logo4 from '../public/textures/Logo4.png';
-import logo5 from '../public/textures/Logo5.png';
 
 export default function HomePage() {
     const [isScrolling, setIsScrolling] = useState(true);
@@ -414,7 +407,7 @@ export default function HomePage() {
     const partners = [
         {
             name: "Schneider Electric",
-            logo: logo1,
+            logo: "/textures/schneiderLogo.png",
             description: "A global leader in energy management and automation, Schneider Electric drives digital transformation by integrating world-leading process and energy technologies to realize the full efficiency and sustainability opportunities for businesses.",
             details: {
                 founded: "1836",
@@ -430,7 +423,7 @@ export default function HomePage() {
         },
         {
             name: "NEC Corporation",
-            logo: logo2,
+            logo: "/textures/necLogo.png",
             description: "NEC Corporation is a leader in the integration of IT and network technologies, providing solutions for businesses and society that promote safety, security, efficiency and equality.",
             details: {
                 founded: "1899",
@@ -446,7 +439,7 @@ export default function HomePage() {
         },
         {
             name: "Moncler",
-            logo: logo3,
+            logo: "/textures/Logo3.png",
             description: "Moncler is a luxury fashion brand known for its high-end outerwear and sportswear, committed to sustainable practices and responsible innovation in the fashion industry.",
             details: {
                 founded: "1952",
@@ -462,7 +455,7 @@ export default function HomePage() {
         },
         {
             name: "SGS",
-            logo: logo4,
+            logo: "/textures/Logo4.png",
             description: "SGS is the world's leading testing, inspection and certification company, recognized as the global benchmark for quality and integrity in sustainability verification.",
             details: {
                 founded: "1878",
@@ -478,7 +471,7 @@ export default function HomePage() {
         },
         {
             name: "Sanofi",
-            logo: logo5,
+            logo: "/textures/Logo5.png",
             description: "Sanofi is a global biopharmaceutical company focused on human health, transforming scientific innovation into healthcare solutions around the world.",
             details: {
                 founded: "2004",
